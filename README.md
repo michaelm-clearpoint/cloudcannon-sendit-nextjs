@@ -56,3 +56,9 @@ Sendit is set up for adding, updating and removing pages, components, posts, por
 * Theme colors can be set in *Data* / *Theme*
 * The main colors are set and variants of them are computed
 * The colors will update on the next build
+
+https://bakshiharsh55.medium.com/deploying-a-next-js-application-using-azure-app-service-a841ad54b460
+
+https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-nextjs-hybrid
+
+https://stackoverflow.com/questions/61450307/js-and-css-not-loading-when-hosting-next-application-on-github-pages
