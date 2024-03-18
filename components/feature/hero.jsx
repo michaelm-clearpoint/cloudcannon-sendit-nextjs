@@ -22,7 +22,7 @@ export default function FeatureHero( {block, dataBinding}) {
                     <div className="feature-hero-banner">
                     <img src={block.image} alt={block.image_alt} loading="lazy" />
                     <div className="shape">
-                        <img src="./images/feature/effect-4.png" alt="shape" loading="lazy" />
+                        <img src="/images/feature/effect-4.png" alt="shape" loading="lazy" />
                     </div>
                     </div>
                 </div>
