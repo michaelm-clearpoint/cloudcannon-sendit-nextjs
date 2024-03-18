@@ -75,8 +75,11 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
-#      - name: Static HTML export with Next.js
-#        run: ${{ steps.detect-package-manager.outputs.runner }} next export
+      - name: Static HTML export with Next.js
+        run: ${{ steps.detect-package-manager.outputs.runner }} next export
+       # https://stackoverflow.com/questions/61450307/js-and-css-not-loading-when-hosting-next-application-on-github-pages        
+      - name: Add .nojekyll file to fix images not found
+        run: ${{ steps.detect-package-manager.outputs.runner }} touch ./out/.nojekyll && echo 'michaelm-clearpoint.github.io' > ./out/CNAME        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
