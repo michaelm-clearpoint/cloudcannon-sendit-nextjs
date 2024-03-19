@@ -62,3 +62,5 @@ https://bakshiharsh55.medium.com/deploying-a-next-js-application-using-azure-app
 https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-nextjs-hybrid
 
 https://stackoverflow.com/questions/61450307/js-and-css-not-loading-when-hosting-next-application-on-github-pages
+
+https://nextjs.org/docs/pages/building-your-application/data-fetching/client-side
