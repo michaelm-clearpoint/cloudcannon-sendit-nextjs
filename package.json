@@ -2,6 +2,7 @@
   "name": "sendit_nextjs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://michaelm-clearpoint.github.io/cloudcannon-sendit-nextjs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
