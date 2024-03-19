@@ -10,7 +10,7 @@ export default function PricingTier( {tier}) {
             <div className="discount">
                 <p>{tier.currency_symbol}{tier.price}</p>
                 <div className="vector vector-one">
-                <img src="/images/pricing/Vector1.svg" alt="Vector" loading="lazy"/>
+                <img src="./images/pricing/Vector1.svg" alt="Vector" loading="lazy"/>
                 </div>
             </div>
             <div className="shape-two top-0"></div>
