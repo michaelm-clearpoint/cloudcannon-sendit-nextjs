@@ -24,6 +24,10 @@
 		{
 			"link": "/contact/",
 			"text": "Contact"
+		},
+		{
+			"link": "/account",
+			"text": "Account"
 		}
 	],
 	"button": {
@@ -31,8 +35,8 @@
 		"text": "Get Started"
 	},
 	"_inputs": {
-	  "logo": {
-		"type": "image"
-	  }
+		"logo": {
+			"type": "image"
+		}
 	}
 }
