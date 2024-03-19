@@ -10,28 +10,33 @@ import {
 
 const queryClient = new QueryClient()
 
-const { isPending, error, data } = useQuery({
-    queryKey: ['repoData'],
-    queryFn: () =>
-        fetch('https://api.github.com/repos/TanStack/query').then((res) =>
-            res.json(),
-        ),
-})
-
-if (isPending) {
-    return 'Loading...'
+export default function GlobalCounter( {block, dataBinding}) {
+    return (
+        <QueryClientProvider client={queryClient}>
+            <Counter block={block} dataBinding={dataBinding} />
+        </QueryClientProvider>
+    )
 }
 
-export default function GlobalCounter( {block, dataBinding}) {
-	return (
+function Counter( {block, dataBinding}) {
+
+    const { isPending, error, data } = useQuery({
+        queryKey: ['repoData'],
+        queryFn: () =>
+            fetch('https://api.github.com/repos/TanStack/query').then((res) =>
+                res.json(),
+            ),
+    })
+
+    return (
         <section
         className={`counter-up ${block.alternate_style ? 'counter-up-two pb-xxl-14 pb-lg-13': ''}`}
         id="counter-up"
         data-cms-bind={dataBinding}
         >
             <div className="container">
-                <h1>query test name: {data.name}</h1>
-                <p>query test data: {data.description}</p>
+                <h1>query test name: {data?.name}</h1>
+                <p>query test data: {data?.description}</p>
 
 
                 <div className="row">
